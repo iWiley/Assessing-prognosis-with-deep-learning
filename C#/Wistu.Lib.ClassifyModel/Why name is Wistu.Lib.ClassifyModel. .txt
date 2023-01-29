@@ -1,0 +1,1 @@
+﻿wistu.cn is the blog URL of the author (Weili Jia). The first namespace used for the class library project in this scenario is Wistu.Lib.ClassifyModel, and the previous name is used here for forward compatibility.

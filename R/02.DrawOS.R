@@ -1,0 +1,11 @@
+warning("Please manually run the code line by line and save the image from the preview box.")
+source("00.Functions.R")
+CheckPackage(c("readxl"))
+# First we need to get the cutoff value
+source("01.CalculateCutoff.R")
+OrginalData.TCGA$Group = ifelse(OrginalData.TCGA$prec.TIL > res.cut.TCGA$prec.TIL$estimate, "High TIL", "Low TIL")
+Plot.KM(OrginalData.TCGA, title = "prec.TIL")
+OrginalData.TCGA$Group = ifelse(OrginalData.TCGA$prec.TLS > 0, "TLS", "Non-TLS")
+Plot.KM(OrginalData.TCGA, title = "prec.TLS")
+OrginalData.XJH$Group = ifelse(OrginalData.XJH$prec.TIL > res.cut.TCGA$prec.TIL$estimate, "High TIL", "Low TIL")
+Plot.KM(OrginalData.XJH, title = "prec.TIL - XJH")
