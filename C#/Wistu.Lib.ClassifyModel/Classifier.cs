@@ -20,6 +20,10 @@ namespace Wistu.Lib.ClassifyModel
         {
             get
             {
+                if (!Directory.Exists(Path.Combine(CurrentPath, "Model")))
+                {
+                    return Array.Empty<string>();
+                }
                 if (totalModels == null)
                 {
                     totalModels = Directory.GetFiles(Path.Combine(CurrentPath, "Model"), "*.zip");
