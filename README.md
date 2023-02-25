@@ -1,10 +1,10 @@
 ## Introduction
 
-This repository contains the source code and data of all programs used in the manuscript "Potential application of deep learning for assessing immune infiltration in hepatocellular carcinoma".
+This repository contains the source code and data of all programs used in the manuscript "Identifying immune infiltration by deep learning to assess prognosis of patients with hepatocellular carcinoma".
 
 ## Folder Structure
 
-    DL-in-HCC
+    Assessing-prognosis-with-deep-learning
     ├── C#                                            C# related projects
     │   ├── Deep Learning Training Command Line Tool    Function as folder name
     │   ├── DL-in-HCC.sln                               Solution file
